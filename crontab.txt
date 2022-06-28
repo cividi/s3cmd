@@ -1,0 +1,2 @@
+CRON_SCHEDULE_PULL s3cmd sync S3_PATH /s3/
+CRON_SCHEDULE_PUSH s3cmd sync --skip-existing /s3/ S3_PATH
