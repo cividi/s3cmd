@@ -7,6 +7,7 @@ aws_host_bucket = os.environ.get('HOST_BUCKET', default="%(bucket)s.s3.amazonaws
 cron_schedule_pull = os.environ.get('CRON_SCHEDULE_PULL', default="*/2 * * * *")
 cron_schedule_push = os.environ.get('CRON_SCHEDULE_PUSH', default="*/5 * * * *")
 s3_path = os.environ.get('S3_PATH')
+local_path = os.environ.get('LOCAL_PATH')
 
 
 # create dictionary of environment variables
@@ -20,6 +21,7 @@ env_dict = {}
 env_dict['CRON_SCHEDULE_PULL'] = cron_schedule_pull
 env_dict['CRON_SCHEDULE_PUSH'] = cron_schedule_push
 env_dict['S3_PATH'] = s3_path
+env_dict['LOCAL_PATH'] = local_path
 
 
 # function to add environment variables to file
